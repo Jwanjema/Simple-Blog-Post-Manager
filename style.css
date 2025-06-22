@@ -1,0 +1,161 @@
+/* Simple Student Blog CSS */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #0967ba; /* Light blue background */
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #2a5ca8; /* Dark blue */
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px #ccc;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+/* Post List Section */
+#post-list {
+  width: 30%;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid #a8c6fa; /* Light blue border */
+}
+
+#post-list h2 {
+  color: #2a5ca8;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #a8c6fa;
+}
+
+.post-item {
+  padding: 10px;
+  margin: 8px 0;
+  background: #e6f0ff; /* Very light blue */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.post-item:hover {
+  background: #d0e2ff; /* Slightly darker blue */
+  transform: scale(1.02);
+}
+
+.post-item h3 {
+  color: #1a3d7a; /* Dark blue */
+}
+
+.post-item p {
+  color: #666;
+  font-size: 0.9em;
+}
+
+/* Post Detail Section */
+#post-detail {
+  width: 70%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid #a8c6fa;
+}
+
+#post-detail h2 {
+  color: #2a5ca8;
+  margin-bottom: 10px;
+}
+
+#post-detail p {
+  margin: 10px 0;
+  color: #444;
+}
+
+/* Form Styles */
+#post-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-top: 30px;
+  border: 1px solid #a8c6fa;
+}
+
+#post-form h2 {
+  color: #2a5ca8;
+  margin-bottom: 15px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #a8c6fa;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+button {
+  background: #4a90e2; /* Nice blue */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #3a7bc8; /* Darker blue */
+}
+
+/* Edit/Delete Buttons */
+.buttons button:first-child {
+  background: #4CAF50; /* Green */
+}
+
+.buttons button:first-child:hover {
+  background: #3e8e41;
+}
+
+.buttons button:last-child {
+  background: #f44336; /* Red */
+}
+
+.buttons button:last-child:hover {
+  background: #d32f2f;
+}
+
+/* Error Message */
+#error-message {
+  color: #f44336;
+  margin-top: 10px;
+  padding: 5px;
+  background: #ffebee;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+/* Placeholder Text */
+#post-detail > p {
+  color: #888;
+  text-align: center;
+  font-style: italic;
+  margin-top: 40px;
+}
