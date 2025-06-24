@@ -1,5 +1,5 @@
 # Simple Blog Manager
-A JavaScript blog application that demonstrates CRUD operations using a mock REST API (json-server).
+This is a Simple Blog Manager app that lets a user post a blog,edit or delete.
 
 ## Features
 
