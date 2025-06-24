@@ -1,10 +1,10 @@
-// Main function that runs when page loads
+// The main function that runs when the page loads
 document.addEventListener('DOMContentLoaded', function() {
   loadPosts();
   setupEventListeners();
 });
 
-// Load all posts from server
+// This is for loading & displaying posts
 function loadPosts() {
   fetch('http://localhost:3000/posts')
     .then(response => response.json())
@@ -20,7 +20,7 @@ function loadPosts() {
     });
 }
 
-// Display list of posts
+// This function displays all posts in the list and sets up click events
 function displayPosts(posts) {
   const postList = document.getElementById('post-list');
   postList.innerHTML = '<h2>All Posts</h2>';
@@ -63,12 +63,12 @@ function showPostDetails(postId) {
     });
 }
 
-// Set up event listeners
+// Set up event listeners for the form submission
 function setupEventListeners() {
   document.getElementById('submit-btn').addEventListener('click', addNewPost);
 }
 
-// Add new post
+// this function adds a new post
 function addNewPost(event) {
   event.preventDefault();
   
@@ -110,7 +110,7 @@ function addNewPost(event) {
   });
 }
 
-// Edit post
+// This function edits an existing post
 function editPost(postId) {
   fetch(`http://localhost:3000/posts/${postId}`)
     .then(response => response.json())
@@ -142,7 +142,7 @@ function editPost(postId) {
     });
 }
 
-// Delete post
+// This function deletes a post
 function deletePost(postId) {
   if (confirm('Are you sure you want to delete this post?')) {
     fetch(`http://localhost:3000/posts/${postId}`, {
@@ -160,7 +160,7 @@ function deletePost(postId) {
   }
 }
 
-// Show error message
+// This function shows an error message for a few seconds
 function showError(message) {
   const errorElement = document.getElementById('error-message');
   errorElement.textContent = message;
